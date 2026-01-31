@@ -5,7 +5,7 @@ import Login from "../views/Login.vue";
 import Home from "../views/Home.vue";
 import ContentAudit from "../views/ContentAudit.vue";
 import ProductManagement from "../views/ProductManagement.vue";
-
+import UserManagement from "../views/UserManagement.vue";
 const routes = [
   {
     path: "/",
@@ -16,6 +16,7 @@ const routes = [
     name: "Login",
     component: Login,
   },
+
   {
     path: "/home",
     name: "Home",
@@ -35,6 +36,12 @@ const routes = [
         name: "ProductManagement",
         component: ProductManagement,
         meta: { title: "商品管理" },
+      },
+      {
+        path: "/home/user-management",
+        name: "UserManagement",
+        component: UserManagement,
+        meta: { title: "用户管理" },
       },
     ],
   },
